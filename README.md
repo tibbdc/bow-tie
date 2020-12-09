@@ -1,9 +1,8 @@
-# ECM_eco1515
-The  automated process for enzyme-constrained model construction.
-
+# bow tie
+Determine the bow tie structure by calculating pathways between metabolites using a flux balance analysis (FBA) based approach.
 ## About
 
-The pipeline was written and tested with Python 3.5, though Python versions (Python 3.6) should work. The core libraries essential for the pipeline including: Cobra, Pandas, and related packages. 
+The pipeline was written and tested with Python 3.8. The core libraries essential for the pipeline including: Cobra, Pandas, and related packages. 
 
 ## Software
 
@@ -13,11 +12,11 @@ The packages used to run the code in the pipeline was listed in requirements.txt
 $ pip install -r requirements.txt
 ```
 
-To create a stand-alone environment named ECM with Python 3.5 and all the reqiured package versions, run the following:
+To create a stand-alone environment named bow_tie with Python 3.8 and all the reqiured package versions, run the following:
 
 ```shell
-$ conda create -n ECM python=3.5 
-$ source activate ECM
+$ conda create -n bow_tie python=3.8 
+$ source activate bow_tie
 $ pip install -r requirements.txt
 ```
 
@@ -27,8 +26,9 @@ You can read more about using conda environments in the [Managing Environments](
 
  All results can be reproduced by executing the Jupyter Python notebooks:
 
-+ Workflow_construction_of_ECM_eco1515.ipynb
-  + the main script of construction enzyme-constrained model
-+ Simulation.ipynb
-  + the script for simulating part of results in manuscript
++ bowtie_path.ipynb
+  + the main script of determining the bow tie structure by FBA-based approach.
+
++ bowtie_graph.ipynb
+  + the script for determining the bow tie structure by graph
 
